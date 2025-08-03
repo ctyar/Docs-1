@@ -1,6 +1,6 @@
 # **Basic Configuration**
 
-Configuration is the most labor-intensive part of using Brighter.Once you have configured Brighter, using its model of requests and handlers is straightforward
+Configuration is the most labor-intensive part of using Brighter. Once you have configured Brighter, using its model of requests and handlers is straightforward
 
 ## **Using .NET Core Dependency Injection**
 
