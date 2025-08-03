@@ -174,7 +174,7 @@ When raising a message on the *Internal Bus*, you use one of the following metho
 When raising a message on an *External Bus*, you use the following methods on the *CommandProcessor*:
 
 * **Post()** and **PostAsync()** - Immediately posts a *Command* or *Event* to another process via the external Bus
-* **DepositPost()** and **DepositPostAsync()** - Puts on or many *Command*(s) or *Event*(s) in the *Outbox* for later delivery
+* **DepositPost()** and **DepositPostAsync()** - Puts one or many *Command*(s) or *Event*(s) in the *Outbox* for later delivery
 * **ClearOutbox()** and **ClearOutboxAsync()** - Clears the *Outbox*, posting un-dispatched messages to another process via the *External Bus*.
 * **ClearAsyncOutbox()** - Implicitly clears the **Outbox**, similar to above however allows bulk dispatching of messages onto a **Transport**.
 
