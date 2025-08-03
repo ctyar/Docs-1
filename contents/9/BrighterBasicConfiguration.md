@@ -291,7 +291,7 @@ public void ConfigureServices(IServiceCollection services)
     services.AddBrighter(...)
         .UseExternalBus(...)
         .UseMySqlOutbox(new MySqlConfiguration(DbConnectionString(), _outBoxTableName), typeof(MySqlConnectionProvider), ServiceLifetime.Singleton)
-        .UseMySqTransactionConnectionProvider(typeof(MySqlEntityFrameworkConnectionProvider<GreetingsEntityGateway>), ServiceLifetime.Scoped)
+        .UseMySqlTransactionConnectionProvider(typeof(MySqlEntityFrameworkConnectionProvider<GreetingsEntityGateway>), ServiceLifetime.Scoped)
         .UseOutboxSweeper()
 
         ...
@@ -382,7 +382,7 @@ public void ConfigureServices(IServiceCollection services)
             ).Create()
         )
         .UseMySqlOutbox(new MySqlConfiguration(DbConnectionString(), _outBoxTableName), typeof(MySqlConnectionProvider), ServiceLifetime.Singleton)
-        .UseMySqTransactionConnectionProvider(typeof(MySqlEntityFrameworkConnectionProvider<GreetingsEntityGateway>), ServiceLifetime.Scoped)
+        .UseMySqlTransactionConnectionProvider(typeof(MySqlEntityFrameworkConnectionProvider<GreetingsEntityGateway>), ServiceLifetime.Scoped)
         .UseOutboxSweeper()
         .AutoFromAssemblies();
 }
