@@ -438,7 +438,7 @@ All *Subscriptions* lets you configure the following common properties.
 
 * **Buffer Size**: The number of messages to hold in memory. Where the buffer is not shared, a single thread or Performer can access these; where the buffer is shared, multiple threads can access the same buffer of work. Work in a buffer is locked on queue based middleware, and thus not available to other consumers (threads or process depending if the buffer is shared or not) until *Acknowledged* or *Rejected*.
 * **Channel Factory**: Creates or finds the necessary infrastructure for messaging on the MoM and wraps it in an object.
-* **Channel *Name**: If queues are primitives in the MoM this names the queue, otherwise just used for diagnostics.
+* **Channel Name**: If queues are primitives in the MoM this names the queue, otherwise just used for diagnostics.
 * **Channel Failure Delay**: How long should we delay if a channel fails before trying again, to give problems time to clear.
 * **Data Type**: We use a [Datatype Channel](https://www.enterpriseintegrationpatterns.com/DatatypeChannel.html). What is the type of this channel?
 * **Empty Channel Delay**: If there are no messages in the queue or stream when we read, how long should we pause before reading again?
